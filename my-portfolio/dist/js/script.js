@@ -23,7 +23,6 @@ fetch('https://api.github.com/users/Avi-Tav/repos')
   })
   .then(function (data) {
     appendData(data);
-    console.log(data);
   })
   .catch(function (err) {
     console.log(err);
@@ -37,7 +36,7 @@ fetch('https://api.github.com/users/Avi-Tav/repos')
     //work1Link.innerHTML = `${data[2].clone_url}`;
 
 
-    
+
     work2Name.innerHTML = `${data[0].name}`;
     //work2Language.innerHTML = `${data[0].language}`;
     work2Description.innerHTML = `${data[0].description}`;
