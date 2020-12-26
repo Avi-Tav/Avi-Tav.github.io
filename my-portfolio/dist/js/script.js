@@ -23,7 +23,6 @@ fetch('https://api.github.com/users/Avi-Tav/repos')
   })
   .then(function (data) {
     appendData(data);
-    console.log(data);
   })
   .catch(function (err) {
     console.log(err);
