@@ -9,24 +9,32 @@ html{
 
 .box-about-name{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
     font-size: 2.5em;
     letter-spacing: 0.07em;
     font-weight: 100;
 }
 
+.box-about img{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 20em;
+    margin: 0 auto;
+    font-size: 1em;
+}
+
 .box-about p{
     font-size: 1.5em;
     width: 22.5em;
-    font-weight: 400;
+    font-weight: 600;
     color: rgb(0, 0, 0);
     background: rgb(28, 93, 102);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 0.07em;
-    font-weight: 600;
+    letter-spacing: 0.03em;
+    font-weight: 500;
 }
 
 .email{
-    font-size: 1em;
+    font-size: 0.8em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing: 0.06em;
 }
@@ -38,7 +46,7 @@ html{
 
 
 
-@media(min-width:1350px)
+@media(min-width:1410px)
 {
     .container{
         display: flex;
@@ -46,10 +54,11 @@ html{
     }
     .left-side{
         margin-top: 5em;
-        margin-left: 10em;
         display: flex;
         flex-direction: column;
         width: 100%;
+        align-items: center;
+        margin-left: 10em;
     }
     .sub-left{
         display: flex;
@@ -61,6 +70,7 @@ html{
         width: 100%;
         justify-content: space-between;
         height: 1500px;
+        align-items: left;
     }
     .box-about{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -81,30 +91,31 @@ html{
         grid-area: img;
         position: relative;
         z-index: 2;
-        max-width: 300px;
+        max-width: 250px;
     }
 
     .box-about h1{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 1.5em;
+        font-size: 1em;
         letter-spacing: 0.07em;
         font-weight: 100;
+        padding-top: 1em;
+        padding-right: 1em;
     }
     
     .box-about p{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 0.75em;
-        color: rgb(0, 0, 0);
-        background: rgb(28, 93, 102);
+        font-size: 0.50em;
+        color: rgb(255, 255, 255);
+        background: rgb(0, 116, 134);
         align-self: start;
         grid-column: -1 / 1;
         grid-row: 2;
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: 108%;
+        width: 100%;
         margin-bottom: 3em;
-        letter-spacing: 0.07em;
         font-weight: 600;
     }
 }
@@ -115,6 +126,7 @@ html{
 
 .box-about-name strong{
     display: block;
+    color: white;
     font-weight: 650;
 }
 
@@ -129,6 +141,9 @@ html{
     grid-column: 50px;
     height: 250px;
     justify-content: left;
+    margin-top: 8em;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 350ms linear;
 }
 
 .out-links{
@@ -137,7 +152,7 @@ html{
     height: 150px;
     justify-content: left;
     justify-content: left;
-    padding-top: 100px;
+    padding-top: 5em;
 }
 
 .out-links nav{
@@ -146,28 +161,35 @@ html{
 
 .sub__link{
     margin-right: 1.2em;
+    transition: transform 500ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
 }
 
 
 .nav__link{
     overflow: hidden;
     text-decoration: none;
-    
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
 }
 
 .nav__link:hover{
     color: rgb(102, 161, 161);
     font-size: 1.2em;
-    transition: 0.6s;
+    opacity: .75;
+    transform: scale(1.1);
 }
 
 /*right side*/
 
 .About-me{
-    font-family: Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;    margin-left: 4em;
+    font-family: Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;    
+    /* margin-left: 2em; */
     letter-spacing: 0.1em;
     margin-top: 3em;
     padding-right: 5em;
+    display: block;
+    width: 45em;
 }
 
 .About-me h1{
@@ -186,6 +208,99 @@ html{
 }
 
 
+.work{
+    display: flex;
+    flex-direction: column;
+}
+
+.work1{
+    text-align: left;
+    background-color: rgb(37, 35, 35);
+    /* margin-left: 4em; */
+    width: 40em;
+    height: 12em;
+    padding: 1em 2em;
+    transition: transform 500ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+.work1:hover{
+    opacity: .75;
+    transform: scale(1.1);
+}
+
+.work2:hover{
+    opacity: .75;
+    transform: scale(1.1);
+}
+
+.work1 a,
+.work1 h3,
+.work1 h1,
+.work1 p,
+.work1 h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    background-color: rgb(37, 35, 35);
+    text-decoration: none;
+    color: white;
+    padding: 0;
+}
+
+.work1 p,
+.work1 h5{
+    color: gray;
+}
+
+.work1 h1{
+    font-size: 1.5em;
+}
+
+.work1 h3{
+    font-size: 0.9em;
+}
+
+.work2{
+    text-align: left;
+    background-color: rgb(37, 35, 35);
+    /* margin-left: 4em; */
+    width: 40em;
+    height: 12em;
+    padding: 1em 2em;
+    margin-top: 1em;
+    transition: transform 500ms cubic-bezier(.5, 0, .5, 1),
+    opacity 250ms linear;
+}
+
+.work2 a,
+.work2 h3,
+.work2 h1,
+.work2 p,
+.work2 h5{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    background-color: rgb(37, 35, 35);
+    text-decoration: none;
+    color: white;
+    padding: 0;
+
+}
+
+.work2 p,
+.work2 h5{
+    color: gray;
+}
+
+.work2 h1{
+    font-size: 1.5em;
+}
+
+.work2 h3{
+    font-size: 0.9em;
+}
+
+
+
 .My-Work{
     display: grid;
     justify-content: center;
@@ -198,14 +313,16 @@ html{
     border: 1px rgb(201, 201, 201);
 }
 
+
 .sub__link:hover{
-    opacity: .7;
-    transition: 0.4s;
+    opacity: .75;
+    transform: scale(1.1);
 }
 
 .CV{
     display: flex;
     flex-direction: column;
+
 }
 
 .download{
@@ -216,6 +333,8 @@ html{
     font-size:1.1em;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 800;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
+    opacity 350ms linear;
 }
 
 .CV p{
