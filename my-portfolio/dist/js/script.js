@@ -6,7 +6,7 @@ const work1Name = document.querySelector(".work1-name");
 const work1Description = document.querySelector(".work1-description");
 const work1Stars = document.querySelector(".work1-stargazers_count");
 
-const work2Link = document.querySelector(".work2-link");
+//const work2Link = document.querySelector(".work2-link");
 const work2Language = document.querySelector(".work2-language");
 const work2Name = document.querySelector(".work2-name");
 const work2Description = document.querySelector(".work2-description");
@@ -16,45 +16,6 @@ const work2Stars = document.querySelector(".work2-stargazers_count");
 const client_id = "Iv1.89313f83851fa72e";
 const client_secret = "b69e61f49e7844d039c01d2f3521df9eb9e5d357";
 
-// const fetchUser = () => {
-//     const api_call = fetch(`https://api.github.com/users/Avi-Tav/repos?client_is=${client_id}&client_secret=${client_secret}`);
-
-// const data = api_call.json();
-// return { data }
-// }
-
-// const showData = () => {
-//     fetchUser().then(() => {
-//         console.log();
-//     })
-// };
-
-// fetch('https://api.github.com/users/Avi-Tav/repos')
-// .then(response => response.json())
-// .then(data => {
-//   console.log(data) // Prints result from `response.json()` in getRequest
-//   work1Name.innerHTML = `${data[2].name}`;
-// })
-// .catch(error => console.error(error))
-
-
-
-// fetch('https://api.github.com/users/Avi-Tav/repos')
-//   .then(function (response) {
-//     return response.json();
-//   })
-//   .then(function (data) {
-//     console.log(data);
-
-//     work1Name.innerHTML = `${data[2].name}`;
-//     // work1Language.innerHTML = `${data[2].language}`;
-//     // work1Description.innerHTML = `${data[2].description}`;
-//     // work1Stars.innerHTML = `${data[2].stargazers_count}`;
-//     // work1Link.innerHTML = `${data[2].clone_url}`;
-//   })
-//   .catch(function (err) {
-//     console.log(err);
-//   });
 
 fetch('https://api.github.com/users/Avi-Tav/repos')
   .then(function (response) {
@@ -63,11 +24,6 @@ fetch('https://api.github.com/users/Avi-Tav/repos')
   .then(function (data) {
     appendData(data);
     console.log(data);
-    // work1Name.innerHTML = `${data[2].name}`;
-    // work1Language.innerHTML = `${data[2].language}`;
-    // work1Description.innerHTML = `${data[2].description}`;
-    // work1Stars.innerHTML = `${data[2].stargazers_count}`;
-    // work1Link.innerHTML = `${data[2].clone_url}`;
   })
   .catch(function (err) {
     console.log(err);
