@@ -36,6 +36,8 @@ fetch('https://api.github.com/users/Avi-Tav/repos')
     work1Stars.innerHTML = `&#9734 ${data[1].stargazers_count}`;
     //work1Link.innerHTML = `${data[2].clone_url}`;
 
+
+    
     work2Name.innerHTML = `${data[0].name}`;
     //work2Language.innerHTML = `${data[0].language}`;
     work2Description.innerHTML = `${data[0].description}`;
