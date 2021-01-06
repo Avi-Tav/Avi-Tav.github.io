@@ -13,6 +13,7 @@ const work2Description = document.querySelector(".work2-description");
 const work2Stars = document.querySelector(".work2-stargazers_count");
 
 
+
 const client_id = "Iv1.89313f83851fa72e";
 const client_secret = "b69e61f49e7844d039c01d2f3521df9eb9e5d357";
 
@@ -43,3 +44,5 @@ fetch('https://api.github.com/users/Avi-Tav/repos')
     work2Stars.innerHTML = `&#9734 ${data[0].stargazers_count}`;
     //work2Link.innerHTML = `${data[1].clone_url}`;
 }
+
+
