@@ -7,6 +7,28 @@ html{
     scroll-behavior: smooth;
 }
 
+/* body {
+    /* margin: 0;
+    width: 100vw;
+    height: 100vh; */
+    /* width: 100% auto;
+    height: 100% auto;
+}  */
+
+/* div {
+    /* width: 100vw;
+    height: 100vh; 
+    width: auto;
+    height: auto;
+} */
+
+/* .div {
+    max-width: 768px;
+    max-height: 1024px;
+    margin: auto;
+    display: block;
+} */
+
 .box-about{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* display: grid; */
@@ -52,7 +74,8 @@ html{
 
 .box-about p{
     font-size: 1.5em;
-    width: 22.5em;
+    max-width: 22.5em;
+    width: auto;
     font-weight: 600;
     color: rgb(252, 252, 252);
     background: rgb(28, 93, 102);
@@ -74,6 +97,7 @@ html{
     /* padding-top: 3em; */
     /* text-align: center; */
     justify-content: center;
+    height: auto;
 }
 
 .out-links nav{
@@ -81,6 +105,7 @@ html{
     /* display: flex; */
     display: flex;
     margin-left: 1em;
+    height: auto;
 }
 
 
@@ -93,22 +118,25 @@ html{
 .right-side{
     display: grid;
     justify-content: center;
+    align-content: stretch;
     text-align: center;
+    width: auto;
 }
 
 .About-me{
     margin-top: 6em;
     font-family: Gothic A1,-apple-system,BlinkMacSystemFont,Helvetica Neue,Arial,sans-serif;    
     /* display: grid; */
-    width: 45em;
+    max-width: 45em;
+    width: auto;
     /* letter-spacing: 0.1em;
     margin-top: 3em;
     padding-right: 5em;
     display: block;
     width: 45em; */
     letter-spacing: 0.1em;
-    display: block;
-    width: 45em;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -126,6 +154,7 @@ html{
     font-weight: 400;
     color: rgb(201, 201, 201);
     justify-content: center;
+    width: auto;
 }
 
 .box-about-name strong{
@@ -175,12 +204,14 @@ html{
 .work{
     display: flex;
     flex-direction: column;
+    width: auto;
 }
 
 .work1{
     background-color: rgb(37, 35, 35);
     /* margin-left: 4em; */
-    width: 44em;
+    max-width: 44em;
+    width: auto;
     height: 12em;
     /* padding: 1em 2em; */
     transition: transform 350ms cubic-bezier(.5, 0, .5, 0),
@@ -233,7 +264,8 @@ html{
 .work2{
     background-color: rgb(37, 35, 35);
     /* margin-left: 4em; */
-    width: 44em;
+    max-width: 44em;
+    width: auto;
     height: 12em;
     /* padding: 1em 2em; */
     /* margin-top: 1em; */
@@ -323,7 +355,7 @@ html{
 
 
 
-@media(min-width:1360px)
+@media(min-width:900px)
 {
     .box-about-name{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -333,6 +365,7 @@ html{
         padding-top: 1em;
         padding-right: 1em;
         text-align: left;
+        width: auto;
     }
     
     
@@ -340,12 +373,15 @@ html{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0 auto;
         font-size: 1em;
+        width: auto;
     }
     
     
     .box-about p{
         font-size: 1.5em;
-        width: 22.5em;
+        /* max-width: 22.5em; */
+        max-width: 50em;
+        width: auto;
         font-weight: 600;
         color: rgb(0, 0, 0);
         background: rgb(28, 93, 102);
@@ -357,6 +393,7 @@ html{
 
     .container{
         display: flex;
+        width: auto;
         /* width:100%; */
     }
     .left-side{
@@ -365,28 +402,37 @@ html{
         flex-direction: column;
         flex: 1;
         align-items: center;
+        align-content: stretch;
         flex-shrink: inherit;
         margin-left: 0;
         margin-right: 0;
         padding: 0;
+        width: auto;
+        height: auto;
     }
     .sub-left{
         display: flex;
         position: fixed;
+        align-content: stretch;
+        width: auto;
+        height: auto;
     }
     .right-side{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-content: stretch;
         flex: 1;
         flex-shrink:initial;
+        width: auto;
         margin: 0;
         padding: 0;
     }
     .box-about{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         display: grid;
-        width: min-content;
+        /* width: min-content; */
+        width: auto;
         margin: 0 auto;
         grid-column-gap: 1em;
         grid-template-areas:
@@ -395,6 +441,19 @@ html{
         grid-template-columns: min-content max-content;
         font-size: 2em;
     }
+    .temp{
+        display: flex;
+        width: auto;
+        height: auto;
+    }
+
+    .intro{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
     .intro-img {
         display: non;
         border: 0;
@@ -411,6 +470,7 @@ html{
         padding: 0;
         margin-left: 0;
         margin-right: 0;
+        width: auto;
     }
 
     
@@ -425,7 +485,8 @@ html{
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: 31.3em;
+        max-width: 31.3em;
+        width: auto;
         margin-bottom: 3em;
         font-weight: 600;
     }
@@ -438,17 +499,20 @@ html{
         display: block;
         color: white;
         font-weight: 650;
+        width: auto;
     }
 
     .nav-bar{
         margin-top: 6em;
         letter-spacing: 0.03em;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: auto;
     }
 
     .nav-bar nav{
         display: grid;
         justify-content: left;
+        width: auto;
         /* height: 250px; */
         /* justify-content: left; */
     
@@ -456,23 +520,32 @@ html{
 
     .nav-bar a{
         margin-bottom: 5em;
+        width: auto;
     }
 
     .out-links{
+        display: flex;
         justify-content: left;
         text-align: left;
         margin-top: 5em;
+        height: auto;
+        width: auto;
     }
 
     .out-links nav{
         display: flex;
         margin: 0;
+        height: auto;
+        width: auto;
     }
 
     .sub__link{
         margin-right: 1.2em;
         transition: transform 300ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
+        max-height: 50%;
+        height: auto;
+        width: auto;
     }
     
     .sub__link:hover{
@@ -487,6 +560,7 @@ html{
         text-decoration: none;
         transition: transform 300ms cubic-bezier(.5,0, .5, 0),
         opacity 250ms linear;
+        width: auto;
     }
 
     .nav__link:hover{
@@ -504,8 +578,12 @@ html{
         letter-spacing: 0.1em;
         margin-top: 3em;
         padding-right: 5em;
-        display: block;
-        width: 45em;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        /* width: 45em; */
+        max-width: 40em;
+        width: auto;
         text-align: left;
     }
 
@@ -515,6 +593,7 @@ html{
         font-weight: 700;
         color: rgb(201, 201, 201);
         text-align: center;
+        width: auto;
     }
         
 
@@ -522,20 +601,24 @@ html{
         font-size: 1.2em;
         font-weight: 400;
         color: rgb(201, 201, 201);
+        width: auto;
     }
 
 
     .work{
         display: flex;
         flex-direction: column;
+        width: auto;
     }
 
     .work1{
         text-align: left;
         background-color: rgb(37, 35, 35);
         /* margin-left: 4em; */
-        width: 40em;
-        height: 12em;
+        /* width: 40em;
+        height: 12em; */
+        max-width: 40em;
+        width: auto;
         /* padding: 1em 2em; */
         transition: transform 350ms cubic-bezier(.5, 0, .5, 0),
         opacity 300ms linear;
@@ -566,27 +649,33 @@ html{
         text-decoration: none;
         color: white;
         padding: 0;
+        width: auto;
     }
 
     .work1 p,
     .work1 h5{
         color: gray;
+        width: auto;
     }
 
     .work1 h1{
         font-size: 1.5em;
+        width: auto;
     }
 
     .work1 h3{
         font-size: 0.7em;
         letter-spacing: 0.15em;
+        width: auto;
     }
 
     .work2{
         background-color: rgb(37, 35, 35);
         /* margin-left: 4em; */
-        width: 40em;
-        height: 12em;
+        /* width: 40em;
+        height: 12em; */
+        max-width: 40em;
+        width: auto;
         /* padding: 1em 2em; */
         /* margin-top: 1em; */
         transition: transform 350ms cubic-bezier(.5, 0, .5, 0),
@@ -609,33 +698,38 @@ html{
         text-decoration: none;
         color: white;
         padding: 0;
+        width: auto;
 
     }
 
     .work2 p,
     .work2 h5{
         color: gray;
+        width: auto;
     }
 
     .work2 h1{
         font-size: 1.5em;
+        width: auto;
     }
 
     .work2 h3{
         font-size: 0.7em;
         letter-spacing: 0.15em;
+        width: auto;
     }
 
 
     .resume{
         display: flex;
         justify-content: center;
-        margin-right: 10em;
+        margin-right: 15em;
+        width: auto;
     }
 
 
     .download{
-        width: 10em;
+        max-width: 10em;
         height: 4em;
         border-radius: 1em;
         background: rgb(45, 53, 53);
@@ -644,23 +738,27 @@ html{
         font-weight: 600;
         transition: transform 300ms cubic-bezier(.5, 0, .5, 1),
         opacity 350ms linear;
+        width: auto;
     }
 
     .CV p{
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 1em;
         text-align: center;
+        width: auto;
     }
 
     .sub-cv{
         text-align: center;
         padding-bottom: 5em;
+        width: auto;
     }
 
     .download:hover{
         /* opacity: .7; */
         /* transform: scale(1.2); */
         color: rgb(219, 233, 233);
+        width: auto;
     }
 
     
