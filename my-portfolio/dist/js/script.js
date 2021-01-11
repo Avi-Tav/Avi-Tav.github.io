@@ -24,18 +24,18 @@ fetch('https://api.github.com/users/Avi-Tav/repos')
   })
   .then(function (data) {
     appendData(data);
+    // console.log(data);
   })
   .catch(function (err) {
     console.log(err);
   });
   
   function appendData(data) {
-    work1Name.innerHTML = `${data[1].name}`;
+    work1Name.innerHTML = `${data[2].name}`;
     //work1Language.innerHTML = `${data[1].language}`;
-    work1Description.innerHTML = `${data[1].description}`;
-    work1Stars.innerHTML = `&#9734 ${data[1].stargazers_count}`;
+    work1Description.innerHTML = `${data[2].description}`;
+    work1Stars.innerHTML = `&#9734 ${data[2].stargazers_count}`;
     //work1Link.innerHTML = `${data[2].clone_url}`;
-
 
 
     work2Name.innerHTML = `${data[0].name}`;
